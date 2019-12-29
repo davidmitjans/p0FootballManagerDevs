@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MiEquipoController">
+  <children>
+    <HBox prefHeight="46.0" prefWidth="6.0">
+      <children>
+        <VBox prefHeight="26.0" prefWidth="750.0" style="-fx-background-color: white;">
+          <children>
+            <HBox opacity="0.95" prefHeight="4.0" prefWidth="750.0" style="-fx-background-color: FABF84;">
+              <children>
+                <Label prefHeight="44.0" prefWidth="129.0" text="Manager" textAlignment="CENTER" translateX="325.0" HBox.hgrow="ALWAYS">
+                  <font>
+                    <Font name="Ebrima Bold" size="14.0" fx:id="x1" />
+                  </font>
+                  <textFill>
+                    <Color blue="0.447" green="0.271" red="0.012" fx:id="x2" />
+                  </textFill>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                </Label>
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+    <HBox prefHeight="558.0" prefWidth="750.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+      <children>
+            <VBox prefHeight="556.0" prefWidth="392.0">
+               <children>
+                  <VBox prefHeight="82.0" prefWidth="327.0">
+                     <children>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0" VBox.vgrow="ALWAYS" />
+                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="327.0" />
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                           <children>
+                              <ImageView fitHeight="55.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true" translateX="60.0">
+                                 <image>
+                                    <Image url="@../images/hiclipart.com-id_intpn.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="lbEquipo" prefHeight="50.0" prefWidth="328.0" text="Mi Equipo F.C" translateX="72.0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="63.0" text="Nombre" translateX="290.0" translateY="-2.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="63.0" text="Localidad" translateX="290.0" translateY="-2.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="63.0" text="Provincia" translateX="290.0" translateY="-8.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0" translateY="-12.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="63.0" text="País" translateX="290.0" translateY="-2.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="63.0" text="División" translateX="290.0" translateY="-20.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="63.0" text="Grupo" translateX="290.0" translateY="-25.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="63.0" text="Posición" translateX="290.0" translateY="-30.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="556.0" prefWidth="392.0">
+               <children>
+                  <VBox prefHeight="82.0" prefWidth="327.0">
+                     <children>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0" VBox.vgrow="ALWAYS" />
+                        <VBox prefHeight="200.0" prefWidth="100.0" />
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="327.0" />
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0" />
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                           <children>
+                              <TextField fx:id="txtNombreEquipo" prefHeight="25.0" prefWidth="285.0" promptText="Nombre de equipo" />
+                           </children>
+                        </HBox>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="327.0">
+                           <children>
+                              <TextField fx:id="txtLocalidad" prefHeight="25.0" prefWidth="285.0" promptText="Localidad" />
+                           </children>
+                        </HBox>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="327.0">
+                           <children>
+                              <TextField fx:id="txtProvincia" prefHeight="25.0" prefWidth="285.0" promptText="Provincia" />
+                           </children>
+                        </HBox>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="327.0">
+                           <children>
+                              <TextField fx:id="txtPais" prefHeight="25.0" prefWidth="285.0" promptText="País" />
+                           </children>
+                        </HBox>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="327.0">
+                           <children>
+                              <TextField fx:id="txtLiga" prefHeight="25.0" prefWidth="285.0" promptText="División" />
+                           </children>
+                        </HBox>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="327.0">
+                           <children>
+                              <TextField fx:id="txtGrupo" prefHeight="25.0" prefWidth="285.0" promptText="Grupo (Introduzca un valor numérico)." />
+                           </children>
+                        </HBox>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="327.0">
+                           <children>
+                              <TextField fx:id="txtPosicion" prefHeight="25.0" prefWidth="285.0" promptText="Posición (Introduzca un valor numérico)." />
+                           </children>
+                        </HBox>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="327.0" />
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                           <children>
+                              <Button fx:id="btnActualizar11" mnemonicParsing="false" onAction="#btnActualizar" prefHeight="29.0" prefWidth="285.0" text="Actualizacion de Equipo" textFill="#0a73dd">
+                                 <font>
+                                    <Font size="12.5" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="56.0" prefWidth="327.0" />
+               </children>
+            </VBox>
+      </children>
+    </HBox>
+  </children>
+</VBox>

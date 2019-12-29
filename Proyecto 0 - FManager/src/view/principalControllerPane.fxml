@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="VBoxPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PrincipalControllerPane">
+   <children>
+      <HBox prefHeight="575.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="250.0" prefWidth="150.0" style="-fx-background-color: #DB7A67;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="120.0" prefWidth="200.0" style="-fx-background-color: lightgray;">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: FABF84;" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label alignment="TOP_LEFT" prefHeight="21.0" prefWidth="145.0" text="Bienvenido:" textFill="#2d2d46" translateY="25.0">
+                                 <HBox.margin>
+                                    <Insets left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </Label>
+                              <HBox prefHeight="0.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label fx:id="lbMiEquipo" alignment="TOP_LEFT" contentDisplay="TOP" prefHeight="19.0" prefWidth="132.0" text="Mi Equipo F.C" textFill="#31316f" translateX="-115.0" translateY="60.0" HBox.hgrow="ALWAYS">
+                                       <font>
+                                          <Font name="Bell MT" size="11.5" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="-23.0" right="-100.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="HBoxFormaciones" alignment="CENTER_LEFT" onMouseClicked="#HBoxFormaciones" onMouseEntered="#FormacionesMouseEntered" onMouseExited="#FormacionesMouseExited" prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: #DB7A67;" styleClass="btn">
+                     <children>
+                        <FontAwesomeIcon fill="#034572" iconName="DASHBOARD" size="2em">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIcon>
+                        <Label text="Formaciones" textFill="#034572">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Ebrima" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="HBoxStats" alignment="CENTER_LEFT" onMouseClicked="#HBoxStats" onMouseEntered="#StatsMouseEntered" onMouseExited="#StatsMouseExited" prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: #DB7A67;" styleClass="btn">
+                     <children>
+                        <FontAwesomeIcon fill="#034572" iconName="LIST" size="2em">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIcon>
+                        <Label text="Stats" textFill="#034572">
+                           <font>
+                              <Font name="Ebrima" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="HBoxJugadores" alignment="CENTER_LEFT" onMouseClicked="#HBoxJugadores" onMouseEntered="#JugadoresMouseEntered" onMouseExited="#JugadoresMouseExited" prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: #DB7A67;" styleClass="btn">
+                     <children>
+                        <FontAwesomeIcon fill="#034572" iconName="COGS" size="2em">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIcon>
+                        <Label text="Jugadores" textFill="#034572">
+                           <font>
+                              <Font name="Ebrima" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="HBoxMiEquipo" alignment="CENTER_LEFT" onMouseClicked="#HBoxMiEquipo" onMouseEntered="#MiEquipoMouseEntered" onMouseExited="#MiEquipoMouseExited" prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: #DB7A67;" styleClass="btn">
+                     <children>
+                        <FontAwesomeIcon fill="#034572" iconName="INFO_CIRCLE" size="2em">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </FontAwesomeIcon>
+                        <Label text="Mi Equipo" textFill="#034572">
+                           <font>
+                              <Font name="Ebrima" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="158.0" style="-fx-background-color: #DB7A67;" styleClass="btn" />
+                  <HBox fx:id="HBoxCerrarSesion" alignment="CENTER_LEFT" onMouseClicked="#HBoxCerrarSesion" onMouseEntered="#CerrarSesionMouseEntered" onMouseExited="#CerrarSesionMouseExited" prefHeight="65.0" prefWidth="159.0" style="-fx-background-color: #DB7A67;" styleClass="btn">
+                     <children>
+                        <ImageView fitHeight="68.0" fitWidth="32.0" opacity="0.77" pickOnBounds="true" preserveRatio="true" translateX="5.0">
+                           <image>
+                              <Image url="@../images/sign-out-icon-19.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label opacity="0.73" prefHeight="21.0" prefWidth="110.0" text="   Cerrar Sesión" textFill="#034572">
+                           <font>
+                              <Font name="Ebrima" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="750.0" style="-fx-background-color: black;" HBox.hgrow="ALWAYS">
+               <children>
+                  <BorderPane fx:id="borderpane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,22 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+/*Menu aplicacion*/
+
+.dialog-pane{
+    -fx-background-color: bisque;
+}
+.dialog-pane .label{
+    -fx-text-fill: #738598;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+.dialog-pane:header .header-panel{
+    -fx-background-color:#226597;
+}
+.dialog-pane:header .header-panel .label{
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

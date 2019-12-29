@@ -1,0 +1,5 @@
+.vBox{
+	-fx-background-image: url('../Images/formacion.jpg');
+	-fx-background-size: 100% 100%;
+	-fx-background-color: grey;
+}

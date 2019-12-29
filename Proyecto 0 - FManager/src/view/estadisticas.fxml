@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EstadisticasController">
+   <children>
+      <HBox prefHeight="575.0" prefWidth="750.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="575.0" prefWidth="250.0" style="-fx-background-color: red;" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="35.0" prefWidth="375.0" style="-fx-background-color: FABF84;">
+                     <children>
+                        <Label style="-fx-background-color: FABF84;" text="Máximo Goleador" textFill="#034572">
+                           <font>
+                              <Font name="Ebrima Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="tableViewGol" prefHeight="703.0" prefWidth="375.0" style="-fx-background-color: white;">
+                    <columns>
+                      <TableColumn fx:id="colJugadorMaxGol" prefWidth="257.0" text="Jugador" />
+                      <TableColumn fx:id="colJugadorNumGoles" prefWidth="117.0" text="Nº Goles" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+            <VBox prefHeight="575.0" prefWidth="250.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="7.0" prefWidth="375.0" style="-fx-background-color: FABF84;">
+                     <children>
+                        <Label text="Tarjetas Amarillas" textFill="#034572">
+                           <font>
+                              <Font name="Ebrima Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="tableViewTarjAmar" prefHeight="703.0" prefWidth="375.0" style="-fx-background-color: white;">
+                     <columns>
+                        <TableColumn fx:id="colJugadorTA" prefWidth="251.0" text="Jugador" />
+                        <TableColumn fx:id="colNumTA" prefWidth="123.0" text="Nº T.A" />
+                     </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="575.0" prefWidth="750.0">
+         <children>
+            <VBox prefHeight="575.0" prefWidth="250.0" style="-fx-background-color: red;" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="35.0" prefWidth="375.0" style="-fx-background-color: FABF84;">
+                     <children>
+                        <Label text="Lesiones" textFill="#034572">
+                           <font>
+                              <Font name="Ebrima Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="tableViewLesiones" prefHeight="703.0" prefWidth="375.0" style="-fx-background-color: white;">
+                     <columns>
+                        <TableColumn fx:id="colJugador" prefWidth="251.0" text="Jugador" />
+                        <TableColumn fx:id="colNumLesiones" prefWidth="123.0" text="Nº Lesiones" />
+                     </columns>
+                  </TableView>
+                  <ListView fx:id="listMaxGoleador1" style="-fx-background-color: #F6C3A7;" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <VBox prefHeight="575.0" prefWidth="250.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="7.0" prefWidth="375.0" style="-fx-background-color: FABF84;">
+                     <children>
+                        <Label text="Tarjetas Rojas" textFill="#034572">
+                           <font>
+                              <Font name="Ebrima Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <TableView fx:id="tableViewTarjRoj" prefHeight="703.0" prefWidth="375.0" style="-fx-background-color: white;">
+                     <columns>
+                        <TableColumn fx:id="colJugadorTR" prefWidth="251.0" text="Jugador" />
+                        <TableColumn fx:id="colNumTR" prefWidth="123.0" text="Nº T.R" />
+                     </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #F6C3A7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.JugadoresController">
+  <children>
+    <HBox prefHeight="46.0" prefWidth="6.0" style="-fx-background-color: #F6C3A7;">
+      <children>
+        <VBox prefHeight="40.0" prefWidth="350.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+          <children>
+            <HBox opacity="0.95" prefHeight="10.0" prefWidth="425.0" style="-fx-background-color: FABF84;">
+              <children>
+                <Label prefHeight="46.0" prefWidth="131.0" text="Atributos Jugador" translateX="180.0" HBox.hgrow="ALWAYS">
+                  <font>
+                    <Font name="Ebrima Bold" size="14.0" fx:id="x1" />
+                  </font>
+                  <textFill>
+                    <Color blue="0.447" green="0.271" red="0.012" fx:id="x2" />
+                  </textFill>
+                </Label>
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+        <VBox prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+          <children>
+            <HBox opacity="0.95" prefHeight="10.0" prefWidth="425.0" style="-fx-background-color: FABF84;">
+              <children>
+                <Label font="$x1" prefHeight="18.0" prefWidth="114.0" text="Stats" textAlignment="CENTER" textFill="$x2" translateX="110.0" HBox.hgrow="ALWAYS" />
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+    <HBox prefHeight="558.0" prefWidth="750.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+      <children>
+        <VBox prefHeight="558.0" prefWidth="423.0" style="-fx-background-color: white;" HBox.hgrow="ALWAYS">
+          <children>
+            <HBox prefHeight="40.0" prefWidth="423.0">
+              <children>
+                <HBox prefHeight="40.0" prefWidth="30.0" />
+                <HBox prefHeight="40.0" prefWidth="149.0" />
+                <HBox prefHeight="40.0" prefWidth="196.0">
+                  <children>
+                    <VBox prefHeight="40.0" prefWidth="197.0">
+                      <children>
+                        <VBox prefHeight="50.0" prefWidth="197.0" />
+                        <VBox prefHeight="22.0" prefWidth="197.0" />
+                      </children>
+                    </VBox>
+                  </children>
+                </HBox>
+              </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="423.0">
+              <children>
+                <HBox prefHeight="40.0" prefWidth="30.0" />
+                <HBox prefHeight="40.0" prefWidth="149.0">
+                  <children>
+                    <Label alignment="CENTER" prefHeight="49.0" prefWidth="161.0" text="Nombre" textAlignment="CENTER">
+                      <font>
+                        <Font size="13.0" fx:id="x3" />
+                      </font>
+                    </Label>
+                  </children>
+                </HBox>
+                <HBox prefHeight="40.0" prefWidth="196.0">
+                  <children>
+                    <VBox prefHeight="40.0" prefWidth="197.0">
+                      <children>
+                        <VBox prefHeight="50.0" prefWidth="197.0">
+                          <children>
+                            <TextField fx:id="txtNombreJ" prefHeight="34.0" prefWidth="218.0" promptText="Xavier" />
+                          </children>
+                        </VBox>
+                        <VBox prefHeight="22.0" prefWidth="197.0" />
+                      </children>
+                    </VBox>
+                  </children>
+                </HBox>
+              </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="423.0">
+              <children>
+                <HBox prefHeight="40.0" prefWidth="30.0" />
+                <HBox prefHeight="40.0" prefWidth="149.0">
+                  <children>
+                    <Label alignment="CENTER" contentDisplay="CENTER" font="$x3" prefHeight="49.0" prefWidth="161.0" text="  Apellidos" textAlignment="CENTER" />
+                  </children>
+                </HBox>
+                <HBox prefHeight="40.0" prefWidth="196.0">
+                  <children>
+                    <VBox prefHeight="40.0" prefWidth="197.0">
+                      <children>
+                        <VBox prefHeight="50.0" prefWidth="197.0">
+                          <children>
+                            <TextField fx:id="txtApellidosJ" prefHeight="34.0" prefWidth="218.0" promptText="Hernández Creus" />
+                          </children>
+                        </VBox>
+                        <VBox prefHeight="22.0" prefWidth="197.0" />
+                      </children>
+                    </VBox>
+                  </children>
+                </HBox>
+              </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="423.0">
+              <children>
+                <HBox prefHeight="40.0" prefWidth="30.0" />
+                <HBox prefHeight="40.0" prefWidth="149.0">
+                  <children>
+                    <Label font="$x3" prefHeight="49.0" prefWidth="161.0" text="              Apodo" textAlignment="CENTER" />
+                  </children>
+                </HBox>
+                <HBox prefHeight="40.0" prefWidth="196.0">
+                  <children>
+                    <VBox prefHeight="40.0" prefWidth="197.0">
+                      <children>
+                        <VBox prefHeight="50.0" prefWidth="197.0">
+                          <children>
+                            <TextField fx:id="txtApodoJ" prefHeight="34.0" prefWidth="218.0" promptText="Xavi" />
+                          </children>
+                        </VBox>
+                        <VBox prefHeight="22.0" prefWidth="197.0" />
+                      </children>
+                    </VBox>
+                  </children>
+                </HBox>
+              </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="423.0">
+              <children>
+                <HBox prefHeight="40.0" prefWidth="30.0" />
+                <HBox prefHeight="40.0" prefWidth="149.0">
+                  <children>
+                    <Label alignment="CENTER" contentDisplay="CENTER" font="$x3" prefHeight="49.0" prefWidth="161.0" text="       Nacionalidad" textAlignment="CENTER" />
+                  </children>
+                </HBox>
+                <HBox prefHeight="40.0" prefWidth="196.0">
+                  <children>
+                    <VBox prefHeight="40.0" prefWidth="197.0">
+                      <children>
+                        <VBox prefHeight="50.0" prefWidth="197.0">
+                          <children>
+                            <TextField fx:id="txtNacionalidadJ" prefHeight="34.0" prefWidth="218.0" promptText="Española" />
+                          </children>
+                        </VBox>
+                        <VBox prefHeight="22.0" prefWidth="197.0" />
+                      </children>
+                    </VBox>
+                  </children>
+                </HBox>
+              </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="423.0">
+              <children>
+                <HBox prefHeight="40.0" prefWidth="30.0" />
+                <HBox prefHeight="40.0" prefWidth="149.0">
+                  <children>
+                    <Label alignment="CENTER" contentDisplay="CENTER" font="$x3" prefHeight="49.0" prefWidth="161.0" text="  Localidad" textAlignment="CENTER" />
+                  </children>
+                </HBox>
+                <HBox prefHeight="40.0" prefWidth="196.0">
+                  <children>
+                    <VBox prefHeight="40.0" prefWidth="197.0">
+                      <children>
+                        <VBox prefHeight="50.0" prefWidth="197.0">
+                          <children>
+                            <TextField fx:id="txtLocalidadJ" prefHeight="34.0" prefWidth="218.0" promptText="Tarrassa" />
+                          </children>
+                        </VBox>
+                        <VBox prefHeight="22.0" prefWidth="197.0" />
+                      </children>
+                    </VBox>
+                  </children>
+                </HBox>
+              </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="423.0">
+              <children>
+                <HBox prefHeight="40.0" prefWidth="30.0" />
+                <HBox prefHeight="40.0" prefWidth="149.0">
+                  <children>
+                    <Label contentDisplay="CENTER" font="$x3" prefHeight="49.0" prefWidth="161.0" text="              Edad" textAlignment="CENTER" />
+                  </children>
+                </HBox>
+                <HBox prefHeight="40.0" prefWidth="196.0">
+                  <children>
+                    <VBox prefHeight="40.0" prefWidth="197.0">
+                      <children>
+                        <VBox prefHeight="50.0" prefWidth="197.0">
+                          <children>
+                            <TextField fx:id="txtEdadJ" prefHeight="34.0" prefWidth="218.0" promptText="39" />
+                          </children>
+                        </VBox>
+                        <VBox prefHeight="22.0" prefWidth="197.0" />
+                      </children>
+                    </VBox>
+                  </children>
+                </HBox>
+              </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="423.0">
+              <children>
+                <HBox prefHeight="40.0" prefWidth="30.0" />
+                <HBox prefHeight="40.0" prefWidth="149.0">
+                  <children>
+                    <Label alignment="CENTER" contentDisplay="CENTER" font="$x3" prefHeight="49.0" prefWidth="161.0" text="Posicion" textAlignment="CENTER" />
+                  </children>
+                </HBox>
+                <HBox prefHeight="40.0" prefWidth="196.0">
+                  <children>
+                    <VBox prefHeight="40.0" prefWidth="197.0">
+                      <children>
+                        <VBox prefHeight="50.0" prefWidth="197.0">
+                          <children>
+                            <TextField fx:id="txtPosicionJ" prefHeight="34.0" prefWidth="218.0" promptText="Medio Centro" />
+                          </children>
+                        </VBox>
+                        <VBox prefHeight="22.0" prefWidth="197.0" />
+                      </children>
+                    </VBox>
+                  </children>
+                </HBox>
+              </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="423.0">
+              <children>
+                <HBox prefHeight="40.0" prefWidth="30.0" />
+                <HBox prefHeight="40.0" prefWidth="149.0">
+                  <children>
+                    <Label font="$x3" prefHeight="49.0" prefWidth="161.0" text="              Peso" textAlignment="CENTER" />
+                  </children>
+                </HBox>
+                <HBox prefHeight="40.0" prefWidth="196.0">
+                  <children>
+                    <VBox prefHeight="40.0" prefWidth="197.0">
+                      <children>
+                        <VBox prefHeight="50.0" prefWidth="197.0">
+                          <children>
+                            <TextField fx:id="txtPesoJ" prefHeight="34.0" prefWidth="218.0" promptText="68" />
+                          </children>
+                        </VBox>
+                        <VBox prefHeight="22.0" prefWidth="197.0" />
+                      </children>
+                    </VBox>
+                  </children>
+                </HBox>
+              </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="423.0">
+              <children>
+                <HBox prefHeight="40.0" prefWidth="30.0" />
+                <HBox prefHeight="40.0" prefWidth="149.0">
+                  <children>
+                    <Label contentDisplay="CENTER" font="$x3" prefHeight="49.0" prefWidth="161.0" text="              Altura" textAlignment="CENTER" />
+                  </children>
+                </HBox>
+                <HBox prefHeight="40.0" prefWidth="196.0">
+                  <children>
+                    <VBox prefHeight="40.0" prefWidth="197.0">
+                      <children>
+                        <VBox prefHeight="50.0" prefWidth="197.0">
+                          <children>
+                            <TextField fx:id="txtAlturaJ" prefHeight="34.0" prefWidth="218.0" promptText="170" />
+                          </children>
+                        </VBox>
+                        <VBox prefHeight="22.0" prefWidth="197.0" />
+                      </children>
+                    </VBox>
+                  </children>
+                </HBox>
+              </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="423.0">
+              <children>
+                <HBox prefHeight="40.0" prefWidth="30.0" />
+                <HBox prefHeight="40.0" prefWidth="149.0">
+                  <children>
+                    <Label contentDisplay="CENTER" font="$x3" prefHeight="49.0" prefWidth="161.0" text="              Dorsal" textAlignment="CENTER" />
+                  </children>
+                </HBox>
+                <HBox prefHeight="40.0" prefWidth="196.0">
+                  <children>
+                    <VBox prefHeight="40.0" prefWidth="197.0">
+                      <children>
+                        <VBox prefHeight="50.0" prefWidth="197.0">
+                          <children>
+                            <TextField fx:id="txtDorsalJ" prefHeight="34.0" prefWidth="218.0" promptText="6" />
+                          </children>
+                        </VBox>
+                        <VBox prefHeight="22.0" prefWidth="197.0" />
+                      </children>
+                    </VBox>
+                  </children>
+                </HBox>
+              </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="423.0">
+              <children>
+                <HBox prefHeight="40.0" prefWidth="30.0" />
+                <HBox prefHeight="40.0" prefWidth="149.0">
+                  <children>
+                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="161.0" textAlignment="CENTER" />
+                  </children>
+                </HBox>
+                <HBox prefHeight="40.0" prefWidth="196.0">
+                  <children>
+                    <VBox prefHeight="40.0" prefWidth="197.0">
+                      <children>
+                        <VBox prefHeight="50.0" prefWidth="197.0">
+                          <children>
+                              <VBox prefHeight="50.0" prefWidth="197.0" />
+                            <HBox prefHeight="100.0" prefWidth="200.0" />
+                          </children>
+                        </VBox>
+                        <VBox prefHeight="22.0" prefWidth="197.0" />
+                      </children>
+                    </VBox>
+                  </children>
+                </HBox>
+              </children>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="423.0">
+              <children>
+                <HBox prefHeight="40.0" prefWidth="30.0" />
+                <HBox prefHeight="40.0" prefWidth="149.0">
+                  <children>
+                    <Button fx:id="limpiarCamposFXML" mnemonicParsing="false" onAction="#limpiarCamposFXML" prefHeight="13.0" prefWidth="27.0" translateX="50.0" translateY="-25.0">
+                                 <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                            <Image url="@../images/clean_365821.png" />
+                          </image>
+                        </ImageView>
+                                 </graphic>
+                    </Button>
+                  </children>
+                </HBox>
+                <HBox prefHeight="40.0" prefWidth="196.0">
+                  <children>
+                    <VBox prefHeight="40.0" prefWidth="197.0">
+                      <children>
+                        <VBox prefHeight="0.0" prefWidth="197.0" />
+                                    <Button fx:id="cancelarJugador" mnemonicParsing="false" onAction="#cancelarJugador" onMouseClicked="#borrarJugador" prefHeight="29.0" prefWidth="90.0" text="Cancelar" textFill="#0a73dd" translateY="-20.0" />
+                                    <Button fx:id="actualizarJugador" mnemonicParsing="false" onAction="#actualizarJugador" onMouseClicked="#borrarJugador" prefHeight="29.0" prefWidth="90.0" text="Actualizar" textFill="#0a73dd" translateX="52.0" />
+                      </children>
+                    </VBox>
+                              <Button fx:id="guardarJugador" mnemonicParsing="false" onAction="#guardarJugador" onMouseClicked="#borrarJugador" prefHeight="25.0" prefWidth="182.0" text="Insertar" textFill="#0a73dd" translateY="-20.0" />
+                  </children>
+                </HBox>
+              </children>
+            </HBox>
+          </children>
+        </VBox>
+        <VBox prefHeight="472.0" prefWidth="327.0" HBox.hgrow="ALWAYS">
+          <children>
+            <VBox prefHeight="82.0" prefWidth="327.0">
+              <children>
+                <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0" VBox.vgrow="ALWAYS" />
+                <VBox prefHeight="200.0" prefWidth="100.0" />
+                <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="327.0" />
+                <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0" />
+                <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                  <children>
+                    <HBox prefHeight="50.0" prefWidth="102.0">
+                      <children>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="128.0">
+                          <children>
+                            <HBox minHeight="-Infinity" prefHeight="60.0" prefWidth="134.0">
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="67.0" />
+                                                <Label prefHeight="23.0" prefWidth="186.0" text="Nº Tarjetas Amarillas" translateX="30.0" translateY="-55.0">
+                                                   <font>
+                                                      <Font size="12.5" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                            </HBox>
+                          </children>
+                        </HBox>
+                        <HBox prefHeight="52.0" prefWidth="40.0" />
+                        <HBox prefHeight="52.0" prefWidth="40.0" />
+                        <HBox prefHeight="52.0" prefWidth="40.0" />
+                      </children>
+                    </HBox>
+                    <TextField fx:id="txtTAJ" prefHeight="25.0" prefWidth="95.0" translateX="45.0" translateY="-55.0" />
+                  </children>
+                </HBox>
+                <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                  <children>
+                    <HBox prefHeight="50.0" prefWidth="155.0">
+                                 <children>
+                                    <Label />
+                                 </children>
+                              </HBox>
+                              <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                                 <children>
+                                    <HBox prefHeight="50.0" prefWidth="102.0">
+                                       <children>
+                                          <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="128.0">
+                                             <children>
+                                                <HBox minHeight="-Infinity" prefHeight="60.0" prefWidth="134.0">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="67.0" />
+                                                      <Label prefHeight="23.0" prefWidth="186.0" text="Nº Tarjetas Rojas" translateX="30.0" translateY="-55.0">
+                                                         <font>
+                                                            <Font size="12.5" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="52.0" prefWidth="40.0" />
+                                          <HBox prefHeight="52.0" prefWidth="40.0" />
+                                          <HBox prefHeight="52.0" prefWidth="40.0" />
+                                       </children>
+                                    </HBox>
+                                    <TextField fx:id="txtTRJ" prefHeight="25.0" prefWidth="95.0" translateX="45.0" translateY="-55.0" />
+                                 </children>
+                              </HBox>
+                  </children>
+                </HBox>
+                <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                  <children>
+                    <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                      <children>
+                        <HBox prefHeight="50.0" prefWidth="155.0">
+                          <children>
+                            <HBox minHeight="-Infinity" prefHeight="55.0" prefWidth="155.0">
+                                             <children>
+                                                <Label />
+                                                <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                                                   <children>
+                                                      <HBox prefHeight="50.0" prefWidth="102.0">
+                                                         <children>
+                                                            <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="128.0">
+                                                               <children>
+                                                                  <HBox minHeight="-Infinity" prefHeight="60.0" prefWidth="134.0">
+                                                                     <children>
+                                                                        <Label prefHeight="17.0" prefWidth="67.0" />
+                                                                        <Label prefHeight="23.0" prefWidth="186.0" text="Nº Goles" translateX="30.0" translateY="-55.0">
+                                                                           <font>
+                                                                              <Font size="12.5" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </HBox>
+                                                            <HBox prefHeight="52.0" prefWidth="40.0" />
+                                                            <HBox prefHeight="52.0" prefWidth="40.0" />
+                                                            <HBox prefHeight="52.0" prefWidth="40.0" />
+                                                         </children>
+                                                      </HBox>
+                                                      <TextField fx:id="txtGolesJ" prefHeight="25.0" prefWidth="95.0" translateX="45.0" translateY="-55.0" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                            </HBox>
+                          </children>
+                        </HBox>
+                      </children>
+                    </HBox>
+                  </children>
+                </HBox>
+                <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                  <children>
+                    <HBox prefHeight="50.0" prefWidth="159.0" />
+                    <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                      <children>
+                        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                          <children>
+                            <HBox prefHeight="50.0" prefWidth="155.0">
+                                             <children>
+                                                <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                                                   <children>
+                                                      <HBox prefHeight="50.0" prefWidth="102.0">
+                                                         <children>
+                                                            <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="128.0">
+                                                               <children>
+                                                                  <HBox minHeight="-Infinity" prefHeight="60.0" prefWidth="134.0">
+                                                                     <children>
+                                                                        <Label prefHeight="17.0" prefWidth="67.0" />
+                                                                        <Label prefHeight="23.0" prefWidth="186.0" text="Nº Lesiones" translateX="30.0" translateY="-55.0">
+                                                                           <font>
+                                                                              <Font size="12.5" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </HBox>
+                                                            <HBox prefHeight="52.0" prefWidth="40.0" />
+                                                            <HBox prefHeight="52.0" prefWidth="40.0" />
+                                                            <HBox prefHeight="52.0" prefWidth="40.0" />
+                                                         </children>
+                                                      </HBox>
+                                                      <TextField fx:id="txtLesionesJ" prefHeight="25.0" prefWidth="95.0" translateX="45.0" translateY="-55.0" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                            </HBox>
+                          </children>
+                        </HBox>
+                      </children>
+                    </HBox>
+                  </children>
+                </HBox>
+                <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                  <children>
+                    <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                      <children>
+                        <HBox prefHeight="50.0" prefWidth="155.0" />
+                      </children>
+                    </HBox>
+                  </children>
+                </HBox>
+                <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="327.0">
+                  <children>
+              <ImageView fitHeight="62.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #F6C3A7;" translateX="210.0" translateY="45.0">
+                <image>
+                  <Image url="@../images/51442-200.png" />
+                </image>
+              </ImageView>
+                    <ComboBox fx:id="cBoxSeleccionJ" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="270.0" promptText="Seleccione" translateX="-31.0">
+                      <items>
+                        <FXCollections fx:id="cBoxSeleccionJItems" fx:factory="observableArrayList">
+                          <String fx:value="Seleccione" />
+                        </FXCollections>
+                      </items>
+                    </ComboBox>
+                  </children>
+                </HBox>
+              </children>
+            </VBox>
+        <Button fx:id="borrarJugador" mnemonicParsing="false" onAction="#borrarJugador" onMouseClicked="#borrarJugador" prefHeight="29.0" prefWidth="123.0" text="Retirar del Equipo" textFill="#0a73dd" translateX="32.0" />
+          </children>
+        </VBox>
+      </children>
+    </HBox>
+  </children>
+</VBox>

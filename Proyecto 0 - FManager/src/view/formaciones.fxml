@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="VBoxFormaciones" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FormacionesController">
+   <children>
+      <HBox prefHeight="575.0" prefWidth="750.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox id="vboxFormacion" fx:id="vboxFormacion" prefHeight="575.0" prefWidth="400.0" styleClass="vBox" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" opacity="0.95" prefHeight="2.0" prefWidth="750.0" style="-fx-background-color: FABF84;">
+                     <children>
+                        <Label text="Formación" textFill="#034572">
+                           <font>
+                              <Font name="Ebrima Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="525.0" prefWidth="465.0" styleClass="vBox" VBox.vgrow="ALWAYS">
+                     <children>
+                        <HBox opacity="0.0" prefHeight="0.0" prefWidth="475.0" style="-fx-background-color: red;" VBox.vgrow="ALWAYS" />
+                        <VBox fx:id="vboxMedio" prefHeight="109.0" prefWidth="475.0" styleClass="vboxMedio" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox prefHeight="68.0" prefWidth="475.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vboxMedio1" prefHeight="109.0" prefWidth="475.0" styleClass="vboxMedio" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vboxMedio2" prefHeight="109.0" prefWidth="475.0" styleClass="vboxMedio" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox layoutX="390.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vboxMedio3" prefHeight="109.0" prefWidth="475.0" styleClass="vboxMedio" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vboxMedio4" opacity="0.0" prefHeight="109.0" prefWidth="475.0" styleClass="vboxMedio" VBox.vgrow="ALWAYS">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </VBox>
+                        <TableView fx:id="tableViewFormacion" prefHeight="694.0" prefWidth="750.0" style="-fx-background-color: white;">
+                          <columns>
+                            <TableColumn fx:id="colDorsal" prefWidth="53.0" text="Dorsal" />
+                            <TableColumn fx:id="colJugadorF" prefWidth="149.0" text="Jugador" />
+                              <TableColumn fx:id="colPosicion" prefWidth="136.0" text="Posición" />
+                              <TableColumn fx:id="colEdad" minWidth="0.0" prefWidth="57.0" text="Edad" />
+                              <TableColumn fx:id="colPeso" minWidth="3.0" prefWidth="69.0" text="Peso" />
+                              <TableColumn fx:id="colAltura" prefWidth="69.0" text="Altura" />
+                              <TableColumn fx:id="colGoles" prefWidth="49.0" text="Goles" />
+                              <TableColumn fx:id="colTA" prefWidth="48.0" text="T.A" />
+                              <TableColumn fx:id="colTR" prefWidth="58.0" text="T.R" />
+                              <TableColumn fx:id="colLesiones" prefWidth="61.0" text="Lesiones" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
